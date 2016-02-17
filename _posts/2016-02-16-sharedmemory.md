@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Shared memory bank conflicts
+category: GPU
 ---
 
 
