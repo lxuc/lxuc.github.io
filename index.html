@@ -12,8 +12,14 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    <span class="post-category">{{ post.category }}</span>
+    <span class="post-date">
+    	{{ post.date | date_to_string }}
+    	{% for item in (0..post.categories.size) %}
+        {% unless forloop.last %}<i class="fa fa-tags"></i>{% endunless %}
+        <a class="post-category" href="/page/category.html#{{ post.categories[item] }}">{{ post.categories[item] }}</a>
+        {% endfor %}
+    </span>
+    
     <div class="post-main">
       <!--{% if post.excerpt.size > 32 %}
         {{ post.excerpt }}
