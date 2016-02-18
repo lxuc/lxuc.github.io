@@ -8,9 +8,9 @@ permalink:        pretty
 
 # Setup
 title:            Xu Lei
-tagline:          'A Jekyll theme'
+tagline:          'TechNotes'
 description:      'TechNotes'
-url:              http://hyde.getpoole.com
+url:              http://lxu.tech
 baseurl:          /
 
 author:
