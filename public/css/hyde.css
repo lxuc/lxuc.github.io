@@ -247,6 +247,7 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .sidebar {
   background-color: #8f5536;
   background-image: url("/res/bk.jpg");
+  background-repeat: no-repeat;
   /*background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;*/
