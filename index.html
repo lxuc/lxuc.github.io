@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-<!--
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
@@ -14,13 +14,17 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
+    {% if post.excerpt.size > 32 %}
+      {{ post.excerpt }}
+    {% else %}
+      {{ post.content | strip_html | strip_newlines | truncate: 160 }}
+    {% endif %}
   </div>
   {% endfor %}
 </div>
--->
 
-<!-- 文章列表展示 -->
+
+<!-- 文章列表展示 
 <div class="panel panel-pithy posts">
     <div class="panel-heading">
       <h3 class="title">
@@ -45,6 +49,7 @@ title: Home
         <div class="clearfix"></div>
     </div>
 </div>
+-->
 
 <div class="pagination">
   {% if paginator.next_page %}
