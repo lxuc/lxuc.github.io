@@ -13,7 +13,7 @@ title: Category
 </div>
 <br/>
 -->
-
+<div class="category-page">
 {% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign category = categories | split:',' | sort %}
 <h2 class="category">Category</h2>
@@ -38,3 +38,4 @@ title: Category
   {% endfor %}
   {% endunless %}
 {% endfor %}
+</div>
