@@ -247,9 +247,9 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .sidebar {
   background-color: #8f5536;
   background-image: url("/res/bk.jpg");
-  background-position: center;
+  /*background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
 }
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
