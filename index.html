@@ -16,7 +16,7 @@ title: Home
     	{{ post.date | date_to_string }}
     	{% for item in (0..post.categories.size) %}
         {% unless forloop.last %}<i class="fa fa-tags"></i>{% endunless %}
-        <a class="post-category" href="/pages/category.html#{{ post.categories[item] }}">{{ post.categories[item] }}</a>
+        <a class="post-category" href="/pages/category#{{ post.categories[item] }}">{{ post.categories[item] }}</a>
         {% endfor %}
     </span>
     
