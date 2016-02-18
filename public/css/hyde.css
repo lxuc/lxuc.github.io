@@ -246,7 +246,7 @@ a.sidebar-nav-item:focus {
 /* Brown */
 .theme-base-0f .sidebar {
   background-color: #8f5536;
-  background-image: url(/res/bk.jpg);
+  background-image: url("/res/bk.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
