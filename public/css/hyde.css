@@ -246,7 +246,10 @@ a.sidebar-nav-item:focus {
 /* Brown */
 .theme-base-0f .sidebar {
   background-color: #8f5536;
-  background-image: url(https://pexcn.me/res/img/bg/01.jpg);
+  background-image: url(/res/bk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
