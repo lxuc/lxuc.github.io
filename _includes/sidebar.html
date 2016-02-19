@@ -14,11 +14,13 @@
       <!--<a class="sidebar-nav-item" href="/pages/category/">Category</a>
       <a class="sidebar-nav-item" href="/pages/archives/">Archives</a> -->
       
+    <nav id="nav">
       <ul>
       {% for nav in site.data.nav %}
         <li><a href="{{ nav.href }}"{% if nav.newblank == true %}target="_blank"{% endif %}><i class="{{ nav.icon }}"></i>&nbsp;{{ nav.title }}</a></li>
       {% endfor%}
       </ul>
+    </nav> 
   </nav>
       
       {% comment %}
