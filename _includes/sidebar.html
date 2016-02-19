@@ -11,16 +11,17 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}"><i class="fa fa-home"></i>Home</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
       <!--<a class="sidebar-nav-item" href="/pages/category/">Category</a>
       <a class="sidebar-nav-item" href="/pages/archives/">Archives</a> -->
       
     <nav id="nav">
      <!-- <ul>-->
       {% for nav in site.data.nav %}
-        <!--<li>-->
+        <!--<li>
           <a href="{{ nav.href }}"{% if nav.newblank == true %}target="_blank"{% endif %}><i class="{{ nav.icon }}"></i>&nbsp;{{ nav.title }}</a><br>
-          <!--</li>-->
+          </li>-->
+          <a href="{{ nav.href }}"{% if nav.newblank == true %}target="_blank"{% endif %}>{{ nav.title }}</a><br>
       {% endfor%}
      <!-- </ul> -->
     </nav> 
